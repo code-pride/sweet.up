@@ -47,6 +47,7 @@
 		3C54490225331445006759D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B0CA699253331A200B5C466 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7B0CA69A2533334300B5C466 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		7BFB12F12533530E00EAF176 /* reformat.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = reformat.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +78,7 @@
 		3C5448D725331442006759D5 = {
 			isa = PBXGroup;
 			children = (
+				7BFB12F12533530E00EAF176 /* reformat.sh */,
 				7B0CA69A2533334300B5C466 /* .gitignore */,
 				7B0CA699253331A200B5C466 /* README.md */,
 				3C5448E225331442006759D5 /* sweet.up */,
