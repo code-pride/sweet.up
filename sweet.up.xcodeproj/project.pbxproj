@@ -49,6 +49,7 @@
 		7B0CA699253331A200B5C466 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7B0CA69A2533334300B5C466 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		7BFB12F12533530E00EAF176 /* reformat.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = reformat.sh; sourceTree = "<group>"; };
+		7BFB130925335F2000EAF176 /* .github */ = {isa = PBXFileReference; lastKnownFileType = folder; path = .github; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +80,7 @@
 		3C5448D725331442006759D5 = {
 			isa = PBXGroup;
 			children = (
+				7BFB130925335F2000EAF176 /* .github */,
 				3C8F8752253356AB00CF0853 /* .swift-format */,
 				7BFB12F12533530E00EAF176 /* reformat.sh */,
 				7B0CA69A2533334300B5C466 /* .gitignore */,
@@ -427,6 +429,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"sweet.up/Preview Content\"";
+				DEVELOPMENT_TEAM = BBDY3ZEHGH;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = sweet.up/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -448,6 +451,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"sweet.up/Preview Content\"";
+				DEVELOPMENT_TEAM = BBDY3ZEHGH;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = sweet.up/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -467,7 +471,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BBDY3ZEHGH;
 				INFOPLIST_FILE = sweet.upTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -488,7 +494,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BBDY3ZEHGH;
 				INFOPLIST_FILE = sweet.upTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -508,7 +516,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BBDY3ZEHGH;
 				INFOPLIST_FILE = sweet.upUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -527,7 +537,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BBDY3ZEHGH;
 				INFOPLIST_FILE = sweet.upUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
