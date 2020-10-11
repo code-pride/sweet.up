@@ -10,6 +10,11 @@ import SwiftUI
 struct ProfileView: View {
   @State var sliderValue: Double = 50.0
 
+  func doWhatever() -> String {
+    let myResponse: String = "dupa"
+    return myResponse
+  }
+
   var body: some View {
     // TODO: Background bleed from the top
     // TODO: Circled profile image
@@ -21,19 +26,28 @@ struct ProfileView: View {
     VStack {
       HStack {
         Text("Settings")
+          .foregroundColor(Color.white)
         Spacer()
         Text( /*@START_MENU_TOKEN@*/"Logout" /*@END_MENU_TOKEN@*/)
-      }.padding(.all, 24)
+          .foregroundColor(Color.white)
+      }
+      .padding(.top, 48)
+      .padding(.horizontal, 24)
 
-      Circle()
-        .frame(width: 158.0, height: 158.0)
-      Text("Alice Wilson")
-        .font(.headline)
-      Text("A mantra goes here")
-        .font(.subheadline)
+      VStack {
+        Image("Profile Photo4x")
+            
+        Text("Alice Wilson")
+          .font(.headline)
+
+        Text("A mantra goes here")
+          .font(.subheadline)
+      }
+      .padding(.top, 96)
+
       Spacer()
 
-      Text("\(self.sliderValue)")
+      Text("\(Int(self.sliderValue.rounded()))")
 
       HStack {
         Text("1")
@@ -41,9 +55,9 @@ struct ProfileView: View {
 
         Text("100")
       }
-
     }
-
+    .background(Image("Background"), alignment: .top)
+    .padding(.top, -44)
   }
 }
 
