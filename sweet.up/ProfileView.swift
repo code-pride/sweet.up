@@ -9,6 +9,23 @@ import SwiftUI
 
 struct ProfileView: View {
   @State var sliderValue: Double = 50.0
+  let primaryColor = Color(red: 176.0 / 255, green: 16.0 / 255, blue: 65.0 / 255, opacity: 1)
+
+  // this is the modifier for common things - just for learning purposes
+  struct WhiteLabelModifier: ViewModifier {
+    func body(content: Content) -> some View {
+      content.foregroundColor(Color.white)
+    }
+  }
+
+  struct PrimaryButtonModifier: ViewModifier {
+    let primaryColor = Color(red: 176.0 / 255, green: 16.0 / 255, blue: 65.0 / 255, opacity: 1)
+
+    func body(content: Content) -> some View {
+      content.padding(10.0).border( /*@START_MENU_TOKEN@*/Color.black /*@END_MENU_TOKEN@*/)
+        .accentColor(primaryColor)
+    }
+  }
 
   func doWhatever() -> String {
     let myResponse: String = "dupa"
@@ -16,32 +33,31 @@ struct ProfileView: View {
   }
 
   var body: some View {
-    // TODO: Background bleed from the top
-    // TODO: Circled profile image
-    // TODO: h1 Label
-    // TODO: h2 label
-    // TODO: Button
-    // TODO: some wall content place, extended to max bottom
 
     VStack {
       HStack {
         Text("Settings")
-          .foregroundColor(Color.white)
+          .modifier(WhiteLabelModifier())
         Spacer()
         Text( /*@START_MENU_TOKEN@*/"Logout" /*@END_MENU_TOKEN@*/)
-          .foregroundColor(Color.white)
+          .modifier(WhiteLabelModifier())
       }
       .padding(.top, 48)
       .padding(.horizontal, 24)
 
       VStack {
-        Image("Profile Photo4x")
-            
+        Image("Profile Photo4x")  // Circled profile image
+
         Text("Alice Wilson")
           .font(.headline)
 
         Text("A mantra goes here")
           .font(.subheadline)
+
+        Button(action: /*@START_MENU_TOKEN@*/ /*@PLACEHOLDER=Action@*/{} /*@END_MENU_TOKEN@*/) {
+          Text("Some action")
+        }.modifier(PrimaryButtonModifier())
+
       }
       .padding(.top, 96)
 
@@ -51,13 +67,15 @@ struct ProfileView: View {
 
       HStack {
         Text("1")
-        Slider(value: self.$sliderValue, in: 1...100)
+        Slider(value: self.$sliderValue, in: 1...100).accentColor(primaryColor)
 
         Text("100")
       }
     }
-    .background(Image("Background"), alignment: .top)
-    .padding(.top, -44)
+    .background(Image("Background"), alignment: .top)  // Background bleed from the top
+    .padding(.top, -44)  // Background bleed from the top
+    .accentColor(primaryColor)
+    .navigationBarHidden(true)
   }
 }
 

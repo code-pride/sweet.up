@@ -14,6 +14,7 @@
 		3C5448F625331445006759D5 /* sweet_upTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5448F525331445006759D5 /* sweet_upTests.swift */; };
 		3C54490125331445006759D5 /* sweet_upUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C54490025331445006759D5 /* sweet_upUITests.swift */; };
 		7B7D7D242533670B009D1F97 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7D7D232533670B009D1F97 /* ProfileView.swift */; };
+		7BE6FC722533C5D0002B1DFC /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE6FC712533C5D0002B1DFC /* AboutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		7B0CA699253331A200B5C466 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7B0CA69A2533334300B5C466 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		7B7D7D232533670B009D1F97 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		7BE6FC712533C5D0002B1DFC /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		7BFB12F12533530E00EAF176 /* reformat.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = reformat.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,6 +113,7 @@
 				3C5448EC25331444006759D5 /* Info.plist */,
 				3C5448E925331444006759D5 /* Preview Content */,
 				7B7D7D232533670B009D1F97 /* ProfileView.swift */,
+				7BE6FC712533C5D0002B1DFC /* AboutView.swift */,
 			);
 			path = sweet.up;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BE6FC722533C5D0002B1DFC /* AboutView.swift in Sources */,
 				3C5448E625331442006759D5 /* ContentView.swift in Sources */,
 				7B7D7D242533670B009D1F97 /* ProfileView.swift in Sources */,
 				3C5448E425331442006759D5 /* sweet_upApp.swift in Sources */,

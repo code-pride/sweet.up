@@ -11,8 +11,9 @@ import SwiftUI
 struct sweet_upApp: App {
   var body: some Scene {
     WindowGroup {
-      //      ContentView()
-      ProfileView()
+      //            ProfileView()
+      ContentView()
+
     }
   }
 }
