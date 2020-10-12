@@ -12,8 +12,7 @@ struct ContentView: View {
     NavigationView {
       VStack {
         NavigationLink(destination: ProfileView()) {
-          Text("Profilesi")
-
+          Text("Profile")
         }
         NavigationLink(destination: AboutView()) {
           Text("About")

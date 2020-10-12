@@ -13,6 +13,12 @@ Run in terminal, from root folder:
 cp pre-commit ./.git/hooks
 ```
 
+Then set it to be executable
+
+```
+chmod +x ./.git/hooks/pre-commit
+```
+
 You can also use bash script, to manually format your code.
 
 Format your code before pushing changes, by running
