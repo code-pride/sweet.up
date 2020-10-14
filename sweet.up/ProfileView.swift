@@ -8,8 +8,6 @@
 import SwiftUI
 
 struct ProfileView: View {
-  let primaryColor = Color(red: 176.0 / 255, green: 16.0 / 255, blue: 65.0 / 255, opacity: 1)
-
   // this is the modifier for common things - just for learning purposes
   struct WhiteLabelModifier: ViewModifier {
     func body(content: Content) -> some View {
@@ -18,11 +16,8 @@ struct ProfileView: View {
   }
 
   struct PrimaryButtonModifier: ViewModifier {
-    let primaryColor = Color(red: 176.0 / 255, green: 16.0 / 255, blue: 65.0 / 255, opacity: 1)
-
     func body(content: Content) -> some View {
       content.padding(10.0).border( /*@START_MENU_TOKEN@*/Color.black /*@END_MENU_TOKEN@*/)
-        .accentColor(primaryColor)
     }
   }
 
@@ -69,7 +64,6 @@ struct ProfileView: View {
     .background(Image("Background"), alignment: .top)  // Background bleed from the top
     .padding(.top, -44)  // Background bleed from the top
     .accentColor(primaryColor)
-    .navigationBarHidden(false)
   }
 }
 

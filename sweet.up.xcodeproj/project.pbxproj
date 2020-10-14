@@ -53,6 +53,7 @@
 		7B0CA69A2533334300B5C466 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		7B7D7D232533670B009D1F97 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		7BC986A025362F9C006E6AB4 /* LearningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningView.swift; sourceTree = "<group>"; };
+		7B959E502534859F00F111BE /* pre-commit */ = {isa = PBXFileReference; lastKnownFileType = text; path = "pre-commit"; sourceTree = "<group>"; };
 		7BE6FC712533C5D0002B1DFC /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		7BFB12F12533530E00EAF176 /* reformat.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = reformat.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,6 +86,7 @@
 		3C5448D725331442006759D5 = {
 			isa = PBXGroup;
 			children = (
+				7B959E502534859F00F111BE /* pre-commit */,
 				3C8F8752253356AB00CF0853 /* .swift-format */,
 				7BFB12F12533530E00EAF176 /* reformat.sh */,
 				7B0CA69A2533334300B5C466 /* .gitignore */,
