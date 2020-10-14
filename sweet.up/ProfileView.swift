@@ -48,9 +48,17 @@ struct ProfileView: View {
         Text("A mantra goes here")
           .font(.subheadline)
 
-        Button(action: /*@START_MENU_TOKEN@*/ /*@PLACEHOLDER=Action@*/{} /*@END_MENU_TOKEN@*/) {
+        Button(action: {}) {
           Text("Some action")
         }.modifier(PrimaryButtonModifier())
+
+        Spacer()
+
+        Button(action: {}) {
+          Text("Some action")
+        }.padding(20)
+          .background(Color.red)
+          .font(.subheadline)
 
       }
       .padding(.top, 96)
@@ -61,12 +69,13 @@ struct ProfileView: View {
     .background(Image("Background"), alignment: .top)  // Background bleed from the top
     .padding(.top, -44)  // Background bleed from the top
     .accentColor(primaryColor)
-    .navigationBarHidden(true)
+    .navigationBarHidden(false)
   }
 }
 
 struct ProfileView_Previews: PreviewProvider {
   static var previews: some View {
     ProfileView()
+    ProfileView().environment(\.colorScheme, .dark)
   }
 }
