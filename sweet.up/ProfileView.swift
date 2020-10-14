@@ -63,7 +63,6 @@ struct ProfileView: View {
     }
     .background(Image("Background"), alignment: .top)  // Background bleed from the top
     .padding(.top, -44)  // Background bleed from the top
-    .accentColor(primaryColor)
   }
 }
 
