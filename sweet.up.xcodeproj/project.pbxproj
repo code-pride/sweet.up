@@ -16,6 +16,7 @@
 		7B63EC7C253A13B600D0330F /* LearningRest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B63EC7B253A13B600D0330F /* LearningRest.swift */; };
 		7B63EC81253A13DE00D0330F /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B63EC80253A13DE00D0330F /* DataService.swift */; };
 		7B7D7D242533670B009D1F97 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7D7D232533670B009D1F97 /* ProfileView.swift */; };
+		7BBCFF84253A1EC70071EB96 /* Gist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBCFF83253A1EC70071EB96 /* Gist.swift */; };
 		7BE6FC722533C5D0002B1DFC /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE6FC712533C5D0002B1DFC /* AboutView.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 		7B63EC80253A13DE00D0330F /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		7B7D7D232533670B009D1F97 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		7B959E502534859F00F111BE /* pre-commit */ = {isa = PBXFileReference; lastKnownFileType = text; path = "pre-commit"; sourceTree = "<group>"; };
+		7BBCFF83253A1EC70071EB96 /* Gist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gist.swift; sourceTree = "<group>"; };
 		7BE6FC712533C5D0002B1DFC /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		7BFB12F12533530E00EAF176 /* reformat.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = reformat.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -122,6 +124,7 @@
 				7BE6FC712533C5D0002B1DFC /* AboutView.swift */,
 				7B63EC7B253A13B600D0330F /* LearningRest.swift */,
 				7B63EC80253A13DE00D0330F /* DataService.swift */,
+				7BBCFF83253A1EC70071EB96 /* Gist.swift */,
 			);
 			path = sweet.up;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 				7B7D7D242533670B009D1F97 /* ProfileView.swift in Sources */,
 				7B63EC7C253A13B600D0330F /* LearningRest.swift in Sources */,
 				3C5448E425331442006759D5 /* sweet_upApp.swift in Sources */,
+				7BBCFF84253A1EC70071EB96 /* Gist.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
