@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C19ABF5253B201200EAA223 /* DiscoverAndMatchCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C19ABF4253B201200EAA223 /* DiscoverAndMatchCategoryView.swift */; };
 		3C5448E425331442006759D5 /* sweet_upApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5448E325331442006759D5 /* sweet_upApp.swift */; };
 		3C5448E625331442006759D5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5448E525331442006759D5 /* ContentView.swift */; };
 		3C5448E825331444006759D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C5448E725331444006759D5 /* Assets.xcassets */; };
 		3C5448EB25331444006759D5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C5448EA25331444006759D5 /* Preview Assets.xcassets */; };
 		3C5448F625331445006759D5 /* sweet_upTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5448F525331445006759D5 /* sweet_upTests.swift */; };
 		3C54490125331445006759D5 /* sweet_upUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C54490025331445006759D5 /* sweet_upUITests.swift */; };
+		3CF7DE0E253AE0BE00075683 /* DiscoverAndMatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF7DE0D253AE0BE00075683 /* DiscoverAndMatchView.swift */; };
 		7B7D7D242533670B009D1F97 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7D7D232533670B009D1F97 /* ProfileView.swift */; };
 		7BE6FC722533C5D0002B1DFC /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE6FC712533C5D0002B1DFC /* AboutView.swift */; };
 /* End PBXBuildFile section */
@@ -35,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C19ABF4253B201200EAA223 /* DiscoverAndMatchCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverAndMatchCategoryView.swift; sourceTree = "<group>"; };
 		3C5448E025331442006759D5 /* sweet.up.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sweet.up.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C5448E325331442006759D5 /* sweet_upApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sweet_upApp.swift; sourceTree = "<group>"; };
 		3C5448E525331442006759D5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,6 +51,7 @@
 		3C54490025331445006759D5 /* sweet_upUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sweet_upUITests.swift; sourceTree = "<group>"; };
 		3C54490225331445006759D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C8F8752253356AB00CF0853 /* .swift-format */ = {isa = PBXFileReference; lastKnownFileType = text; name = ".swift-format"; path = "../.swift-format"; sourceTree = "<group>"; };
+		3CF7DE0D253AE0BE00075683 /* DiscoverAndMatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverAndMatchView.swift; sourceTree = "<group>"; };
 		7B0CA699253331A200B5C466 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7B0CA69A2533334300B5C466 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		7B7D7D232533670B009D1F97 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
@@ -116,6 +120,8 @@
 				3C5448E925331444006759D5 /* Preview Content */,
 				7B7D7D232533670B009D1F97 /* ProfileView.swift */,
 				7BE6FC712533C5D0002B1DFC /* AboutView.swift */,
+				3CF7DE0D253AE0BE00075683 /* DiscoverAndMatchView.swift */,
+				3C19ABF4253B201200EAA223 /* DiscoverAndMatchCategoryView.swift */,
 			);
 			path = sweet.up;
 			sourceTree = "<group>";
@@ -275,7 +281,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C19ABF5253B201200EAA223 /* DiscoverAndMatchCategoryView.swift in Sources */,
 				7BE6FC722533C5D0002B1DFC /* AboutView.swift in Sources */,
+				3CF7DE0E253AE0BE00075683 /* DiscoverAndMatchView.swift in Sources */,
 				3C5448E625331442006759D5 /* ContentView.swift in Sources */,
 				7B7D7D242533670B009D1F97 /* ProfileView.swift in Sources */,
 				3C5448E425331442006759D5 /* sweet_upApp.swift in Sources */,
@@ -438,7 +446,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"sweet.up/Preview Content\"";
-				DEVELOPMENT_TEAM = BBDY3ZEHGH;
+				DEVELOPMENT_TEAM = SXNC42Z6D4;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = sweet.up/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -446,7 +454,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.codepride.sweet-up";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.codepride.sweet-up-1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -462,7 +470,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"sweet.up/Preview Content\"";
-				DEVELOPMENT_TEAM = BBDY3ZEHGH;
+				DEVELOPMENT_TEAM = SXNC42Z6D4;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = sweet.up/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -470,7 +478,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.codepride.sweet-up";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.codepride.sweet-up-1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
