@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C19ABF5253B201200EAA223 /* DiscoverAndMatchCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C19ABF4253B201200EAA223 /* DiscoverAndMatchCategoryView.swift */; };
+		3CF7DE0E253AE0BE00075683 /* DiscoverAndMatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF7DE0D253AE0BE00075683 /* DiscoverAndMatchView.swift */; };
 		7BC517DD253E157C00EC120E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC517DC253E157C00EC120E /* AppDelegate.swift */; };
 		7BC517DF253E157C00EC120E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC517DE253E157C00EC120E /* SceneDelegate.swift */; };
 		7BC517E1253E157C00EC120E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC517E0253E157C00EC120E /* ContentView.swift */; };
@@ -41,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C19ABF4253B201200EAA223 /* DiscoverAndMatchCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverAndMatchCategoryView.swift; sourceTree = "<group>"; };
+		3CF7DE0D253AE0BE00075683 /* DiscoverAndMatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverAndMatchView.swift; sourceTree = "<group>"; };
 		7BC517D9253E157C00EC120E /* sweet.up.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sweet.up.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BC517DC253E157C00EC120E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BC517DE253E157C00EC120E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +121,8 @@
 		7BC517DB253E157C00EC120E /* sweet.up */ = {
 			isa = PBXGroup;
 			children = (
+				3CF7DE0D253AE0BE00075683 /* DiscoverAndMatchView.swift */,
+				3C19ABF4253B201200EAA223 /* DiscoverAndMatchCategoryView.swift */,
 				7BC517DC253E157C00EC120E /* AppDelegate.swift */,
 				7BC517DE253E157C00EC120E /* SceneDelegate.swift */,
 				7BC517E0253E157C00EC120E /* ContentView.swift */,
@@ -290,6 +296,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C19ABF5253B201200EAA223 /* DiscoverAndMatchCategoryView.swift in Sources */,
+				3CF7DE0E253AE0BE00075683 /* DiscoverAndMatchView.swift in Sources */,
 				7BC51810253E15B200EC120E /* ProfileView.swift in Sources */,
 				7BC517DD253E157C00EC120E /* AppDelegate.swift in Sources */,
 				7BC517DF253E157C00EC120E /* SceneDelegate.swift in Sources */,
@@ -464,14 +472,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"sweet.up/Preview Content\"";
-				DEVELOPMENT_TEAM = BBDY3ZEHGH;
+				DEVELOPMENT_TEAM = SXNC42Z6D4;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = sweet.up/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.codepride.sweet-up";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.codepride.sweet-up-1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -485,14 +493,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"sweet.up/Preview Content\"";
-				DEVELOPMENT_TEAM = BBDY3ZEHGH;
+				DEVELOPMENT_TEAM = SXNC42Z6D4;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = sweet.up/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.codepride.sweet-up";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.codepride.sweet-up-1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -17,6 +17,9 @@ struct ContentView: View {
         NavigationLink(destination: AboutView()) {
           Text("About")
         }
+        NavigationLink(destination: DiscoverAndMatchView()) {
+          Text("Match")
+        }
         .navigationBarTitle("WIP Navigation")
       }
     }
