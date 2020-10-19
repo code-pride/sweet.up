@@ -17,11 +17,24 @@ struct ContentView: View {
         NavigationLink(destination: AboutView()) {
           Text("About")
         }
+        NavigationLink(destination: LearningRest()) {
+          Text("Learning Rest")
+        }
         NavigationLink(destination: DiscoverAndMatchView()) {
           Text("Match")
         }
         .navigationBarTitle("WIP Navigation")
       }
+      Text("Another Tab")
+        .tabItem {
+          Image(systemName: "2.square.fill")
+          Text("Second")
+        }
+      Text("The Last Tab")
+        .tabItem {
+          Image(systemName: "3.square.fill")
+          Text("Third")
+        }
     }
   }
 }

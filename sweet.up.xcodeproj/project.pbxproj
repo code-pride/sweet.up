@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B63EC7C253A13B600D0330F /* LearningRest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B63EC7B253A13B600D0330F /* LearningRest.swift */; };
+		7B63EC81253A13DE00D0330F /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B63EC80253A13DE00D0330F /* DataService.swift */; };
+		7BBCFF84253A1EC70071EB96 /* Gist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBCFF83253A1EC70071EB96 /* Gist.swift */; };
 		3C19ABF5253B201200EAA223 /* DiscoverAndMatchCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C19ABF4253B201200EAA223 /* DiscoverAndMatchCategoryView.swift */; };
 		3CF7DE0E253AE0BE00075683 /* DiscoverAndMatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF7DE0D253AE0BE00075683 /* DiscoverAndMatchView.swift */; };
 		7BC517DD253E157C00EC120E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC517DC253E157C00EC120E /* AppDelegate.swift */; };
@@ -43,6 +46,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7B63EC7B253A13B600D0330F /* LearningRest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningRest.swift; sourceTree = "<group>"; };
+		7B63EC80253A13DE00D0330F /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		7BBCFF83253A1EC70071EB96 /* Gist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gist.swift; sourceTree = "<group>"; };
 		3C19ABF4253B201200EAA223 /* DiscoverAndMatchCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverAndMatchCategoryView.swift; sourceTree = "<group>"; };
 		3CF7DE0D253AE0BE00075683 /* DiscoverAndMatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverAndMatchView.swift; sourceTree = "<group>"; };
 		7BC517D9253E157C00EC120E /* sweet.up.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sweet.up.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,6 +127,9 @@
 		7BC517DB253E157C00EC120E /* sweet.up */ = {
 			isa = PBXGroup;
 			children = (
+				7B63EC7B253A13B600D0330F /* LearningRest.swift */,
+				7B63EC80253A13DE00D0330F /* DataService.swift */,
+				7BBCFF83253A1EC70071EB96 /* Gist.swift */,
 				3CF7DE0D253AE0BE00075683 /* DiscoverAndMatchView.swift */,
 				3C19ABF4253B201200EAA223 /* DiscoverAndMatchCategoryView.swift */,
 				7BC517DC253E157C00EC120E /* AppDelegate.swift */,
@@ -296,6 +305,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B63EC81253A13DE00D0330F /* DataService.swift in Sources */,
+				7B63EC7C253A13B600D0330F /* LearningRest.swift in Sources */,
+				7BBCFF84253A1EC70071EB96 /* Gist.swift in Sources */,
 				3C19ABF5253B201200EAA223 /* DiscoverAndMatchCategoryView.swift in Sources */,
 				3CF7DE0E253AE0BE00075683 /* DiscoverAndMatchView.swift in Sources */,
 				7BC51810253E15B200EC120E /* ProfileView.swift in Sources */,
