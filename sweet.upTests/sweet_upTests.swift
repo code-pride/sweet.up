@@ -2,7 +2,7 @@
 //  sweet_upTests.swift
 //  sweet.upTests
 //
-//  Created by Tomasz Ferens on 11/10/2020.
+//  Created by Marcin Krawczyk on 19/10/2020.
 //
 
 import XCTest
