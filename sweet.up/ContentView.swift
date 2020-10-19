@@ -20,6 +20,9 @@ struct ContentView: View {
         NavigationLink(destination: LearningRest()) {
           Text("Learning Rest")
         }
+        NavigationLink(destination: DiscoverAndMatchView()) {
+          Text("Match")
+        }
         .navigationBarTitle("WIP Navigation")
       }
       Text("Another Tab")
