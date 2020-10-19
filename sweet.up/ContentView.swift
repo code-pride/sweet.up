@@ -52,6 +52,16 @@ struct ContentView: View {
         //                .background(Color.red.edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/))
         //                .font(.headline)
       }
+      Text("Another Tab")
+        .tabItem {
+          Image(systemName: "2.square.fill")
+          Text("Second")
+        }
+      Text("The Last Tab")
+        .tabItem {
+          Image(systemName: "3.square.fill")
+          Text("Third")
+        }
     }
     //    TabView {
     //      NavigationView {
