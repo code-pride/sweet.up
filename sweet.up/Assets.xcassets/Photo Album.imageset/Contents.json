@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Photo Album2.png",
+      "filename" : "Photo Album.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Photo Album2-1.png",
+      "filename" : "Photo Album-1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Photo Album2-2.png",
+      "filename" : "Photo Album-2.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

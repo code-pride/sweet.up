@@ -13,7 +13,7 @@ struct ContentView: View {
       HomeView()
         .tabItem {
           VStack {
-            Image("Home2")
+            Image("Home")
               .renderingMode(.original)
             Text("Home")
           }
@@ -21,7 +21,7 @@ struct ContentView: View {
       PhotoAlbumView()
         .tabItem {
           VStack {
-            Image("Photo Album2")
+            Image("Photo Album")
               .renderingMode(.original)
             Text("Album")
           }
@@ -29,7 +29,7 @@ struct ContentView: View {
       DiscoverAndMatchView()
         .tabItem {
           VStack {
-            Image("Discover & Match2")
+            Image("Discover & Match")
               .renderingMode(.original)
             Text("Discover & Match")
           }
@@ -37,7 +37,7 @@ struct ContentView: View {
       CalendarView()
         .tabItem {
           VStack {
-            Image("Calendar2")
+            Image("Calendar")
               .renderingMode(.original)
             Text("Calendar")
           }
