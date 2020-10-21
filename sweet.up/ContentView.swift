@@ -9,93 +9,41 @@ import SwiftUI
 
 struct ContentView: View {
   var body: some View {
-    ZStack {
-      ZStack {
-        RoundedRectangle(cornerRadius: 10).foregroundColor(.blue)
-          .edgesIgnoringSafeArea( /*@START_MENU_TOKEN@*/.all /*@END_MENU_TOKEN@*/)
-        VStack {
-          Text("Twoja stara pierze w rzece")
-          Image("Profile Photo4x")
-        }
-
-        //            TabView {
-        //              NavigationView {
-        //                VStack {
-        //                  NavigationLink(destination: ProfileView()) {
-        //                    Text("Profile")
-        //                  }
-        //
-        //                  NavigationLink(destination: AboutView()) {
-        //                    Text("About")
-        //                  }
-        //                  NavigationLink(destination: LearningView()) {
-        //                    Text("Learning View")
-        //                  }
-        //                  .navigationBarTitle("WIP Navigation")
-        //                }
-        //              }
-        //              .tabItem {
-        //                Image(systemName: "1.square.fill")
-        //                Text("First")
-        //              }
-        //              Text("Another Tab")
-        //                .tabItem {
-        //                  Image(systemName: "2.square.fill")
-        //                  Text("Second")
-        //                }
-        //              Text("The Last Tab")
-        //                .tabItem {
-        //                  Image(systemName: "3.square.fill")
-        //                  Text("Third")
-        //                }
-        //            }
-        //                .background(Color.red.edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/))
-        //                .font(.headline)
-      }
-      Text("Another Tab")
+    TabView {
+      HomeView()
         .tabItem {
-          Image(systemName: "2.square.fill")
-          Text("Second")
-        }
-      Text("The Last Tab")
+          VStack {
+            Image("Home2")
+              .renderingMode(.original)
+            Text("Home")
+          }
+        }.tag(0)
+      PhotoAlbumView()
         .tabItem {
-          Image(systemName: "3.square.fill")
-          Text("Third")
-        }
+          VStack {
+            Image("Photo Album2")
+              .renderingMode(.original)
+            Text("Album")
+          }
+        }.tag(1)
+      DiscoverAndMatchView()
+        .tabItem {
+          VStack {
+            Image("Discover & Match2")
+              .renderingMode(.original)
+            Text("Discover & Match")
+          }
+        }.tag(2)
+      CalendarView()
+        .tabItem {
+          VStack {
+            Image("Calendar2")
+              .renderingMode(.original)
+            Text("Calendar")
+          }
+        }.tag(3)
     }
-    //    TabView {
-    //      NavigationView {
-    //        VStack {
-    //          NavigationLink(destination: ProfileView()) {
-    //            Text("Profile")
-    //          }
-    //
-    //          NavigationLink(destination: AboutView()) {
-    //            Text("About")
-    //          }
-    //          NavigationLink(destination: LearningView()) {
-    //            Text("Learning View")
-    //          }
-    //          .navigationBarTitle("WIP Navigation")
-    //        }
-    //      }
-    //      .tabItem {
-    //        Image(systemName: "1.square.fill")
-    //        Text("First")
-    //      }
-    //      Text("Another Tab")
-    //        .tabItem {
-    //          Image(systemName: "2.square.fill")
-    //          Text("Second")
-    //        }
-    //      Text("The Last Tab")
-    //        .tabItem {
-    //          Image(systemName: "3.square.fill")
-    //          Text("Third")
-    //        }
-    //    }
-    //    .font(.headline)
-
+    .font(.headline)
   }
 }
 
@@ -104,3 +52,14 @@ struct ContentView_Previews: PreviewProvider {
     ContentView()
   }
 }
+
+//ZStack {
+//  ZStack {
+//    RoundedRectangle(cornerRadius: 10).foregroundColor(.blue)
+//      .edgesIgnoringSafeArea( /*@START_MENU_TOKEN@*/.all /*@END_MENU_TOKEN@*/)
+//    VStack {
+//      Text("Twoja stara pierze w rzece")
+//      Image("Profile Photo4x")
+//    }
+//  }
+//}

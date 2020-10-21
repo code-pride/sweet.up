@@ -10,13 +10,13 @@ import SwiftUI
 struct AboutView: View {
   var body: some View {
     ZStack {
-      RoundedRectangle(cornerRadius: 10).foregroundColor(.blue)
-      Color.red
-        .edgesIgnoringSafeArea( /*@START_MENU_TOKEN@*/.all /*@END_MENU_TOKEN@*/)
-      Image("love")
+      Color.init("MainBackgroundColor").ignoresSafeArea()
       VStack {
         Text("🤮 About app")
+          .foregroundColor(Color.white)
         Text("Nothing to see here")
+          .foregroundColor(Color.white)
+        Image("Photo Album")
       }
     }
 

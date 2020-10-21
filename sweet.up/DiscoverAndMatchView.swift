@@ -36,17 +36,22 @@ struct TileTextImageLink: View {
 
 struct DiscoverAndMatchView: View {
   var body: some View {
-    ScrollView {
-      VStack(spacing: 0) {
-        TileTextImageLink(category: "a-perfect-match", text: "a \"perfect\" match")
-        TileTextImageLink(category: "dinner-at-home", text: "dinner at home")
-        TileTextImageLink(category: "a-perfect-gift", text: "a \"perfect\" gift")
-        TileTextImageLink(category: "movie-night", text: "movie night")
-        TileTextImageLink(category: "evening-out", text: "evening out")
-        TileTextImageLink(category: "next-vacations", text: "next vacations")
-        TileTextImageLink(category: "weekend-retreat", text: "weekend retreat")
-        TileTextImageLink(category: "active-together", text: "active together")
-        TileTextImageLink(category: "next-best-date", text: "next best date")
+    NavigationView {
+      ZStack {
+        Color.init("MainBackgroundColor").ignoresSafeArea()
+        ScrollView {
+          VStack(spacing: 0) {
+            TileTextImageLink(category: "a-perfect-match", text: "a \"perfect\" match")
+            TileTextImageLink(category: "dinner-at-home", text: "dinner at home")
+            TileTextImageLink(category: "a-perfect-gift", text: "a \"perfect\" gift")
+            TileTextImageLink(category: "movie-night", text: "movie night")
+            TileTextImageLink(category: "evening-out", text: "evening out")
+            TileTextImageLink(category: "next-vacations", text: "next vacations")
+            TileTextImageLink(category: "weekend-retreat", text: "weekend retreat")
+            TileTextImageLink(category: "active-together", text: "active together")
+            TileTextImageLink(category: "next-best-date", text: "next best date")
+          }
+        }
       }
     }
   }
