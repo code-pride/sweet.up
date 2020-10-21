@@ -43,6 +43,9 @@ struct ContentView: View {
           }
         }.tag(3)
     }
+    .onAppear(perform: {
+      UITabBar.appearance().barTintColor = UIColor(named: "MainBackgroundColor")
+    })
     .font(.headline)
   }
 }
