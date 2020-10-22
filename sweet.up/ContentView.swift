@@ -9,33 +9,44 @@ import SwiftUI
 
 struct ContentView: View {
   var body: some View {
-    NavigationView {
-      VStack {
-        NavigationLink(destination: ProfileView()) {
-          Text("Profile")
-        }
-        NavigationLink(destination: AboutView()) {
-          Text("About")
-        }
-        NavigationLink(destination: LearningRest()) {
-          Text("Learning Rest")
-        }
-        NavigationLink(destination: DiscoverAndMatchView()) {
-          Text("Match")
-        }
-        .navigationBarTitle("WIP Navigation")
-      }
-      Text("Another Tab")
+    TabView {
+      HomeView()
         .tabItem {
-          Image(systemName: "2.square.fill")
-          Text("Second")
-        }
-      Text("The Last Tab")
+          VStack {
+            Image("Home")
+              .renderingMode(.original)
+            Text("Home")
+          }
+        }.tag(0)
+      PhotoAlbumView()
         .tabItem {
-          Image(systemName: "3.square.fill")
-          Text("Third")
-        }
+          VStack {
+            Image("Photo Album")
+              .renderingMode(.original)
+            Text("Album")
+          }
+        }.tag(1)
+      DiscoverAndMatchView()
+        .tabItem {
+          VStack {
+            Image("Discover & Match")
+              .renderingMode(.original)
+            Text("Discover & Match")
+          }
+        }.tag(2)
+      CalendarView()
+        .tabItem {
+          VStack {
+            Image("Calendar")
+              .renderingMode(.original)
+            Text("Calendar")
+          }
+        }.tag(3)
     }
+    .onAppear(perform: {
+      UITabBar.appearance().barTintColor = UIColor(named: "MainBackgroundColor")
+    })
+    .font(.headline)
   }
 }
 
@@ -44,3 +55,14 @@ struct ContentView_Previews: PreviewProvider {
     ContentView()
   }
 }
+
+//ZStack {
+//  ZStack {
+//    RoundedRectangle(cornerRadius: 10).foregroundColor(.blue)
+//      .edgesIgnoringSafeArea( /*@START_MENU_TOKEN@*/.all /*@END_MENU_TOKEN@*/)
+//    VStack {
+//      Text("Twoja stara pierze w rzece")
+//      Image("Profile Photo4x")
+//    }
+//  }
+//}

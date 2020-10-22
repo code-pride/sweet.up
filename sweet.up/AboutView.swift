@@ -9,9 +9,15 @@ import SwiftUI
 
 struct AboutView: View {
   var body: some View {
-    VStack {
-      Text("🤮 About app")
-      Text("Nothing to see here")
+    ZStack {
+      Color.init("MainBackgroundColor").ignoresSafeArea()
+      VStack {
+        Text("🤮 About app")
+          .foregroundColor(Color.white)
+        Text("Nothing to see here")
+          .foregroundColor(Color.white)
+        Image("Photo Album")
+      }
     }
 
   }
