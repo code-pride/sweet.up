@@ -7,11 +7,24 @@
 
 import SwiftUI
 
+struct Card: View {
+  var body: some View {
+    Rectangle()
+      .fill(Color.purple)
+      .frame(width: 300, height: 300)
+      .cornerRadius(8)
+      .shadow(radius: 8)
+      .padding()
+  }
+}
+
 struct DiscoverAndMatchCategoryView: View {
   let category: String
+
   var body: some View {
     VStack {
-      Text("category: \(category)")
+      Text("elo \(category)")
+      Card()
     }
   }
 }

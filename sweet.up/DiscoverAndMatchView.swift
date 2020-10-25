@@ -7,19 +7,25 @@
 
 import SwiftUI
 
-struct TileTextImageLink: View {
-  let category: String
-  let text: String
+struct Category: Identifiable {
+  var id = UUID()
+
+  var name: String
+  var textOnImage: String
+}
+
+struct CategoryTile: View {
+  let category: Category
 
   let imageHeight: CGFloat = 146
 
   var body: some View {
-    NavigationLink(destination: DiscoverAndMatchCategoryView(category: category)) {
+    NavigationLink(destination: DiscoverAndMatchCategoryView(category: category.name)) {
       VStack(spacing: 0) {
-        Image(category).resizable()
+        Image(category.name).resizable()
           .frame(height: imageHeight)
         HStack(spacing: 0) {
-          Text(text)
+          Text(category.textOnImage)
             .font(Font.body.bold())
             .frame(maxWidth: .infinity, alignment: .leading)
             .foregroundColor(.white)
@@ -30,9 +36,21 @@ struct TileTextImageLink: View {
         .padding(.trailing, 20)
         .padding(.leading, 20)
       }
-    }
+    }.navigationBarHidden(true)
   }
 }
+
+let categories: [Category] = [
+  Category(name: "a-perfect-match", textOnImage: "a \"perfect\" match"),
+  Category(name: "dinner-at-home", textOnImage: "dinner at home"),
+  Category(name: "a-perfect-gift", textOnImage: "a \"perfect\" gift"),
+  Category(name: "movie-night", textOnImage: "movie night"),
+  Category(name: "evening-out", textOnImage: "evening out"),
+  Category(name: "next-vacations", textOnImage: "next vacations"),
+  Category(name: "weekend-retreat", textOnImage: "weekend retreat"),
+  Category(name: "active-together", textOnImage: "active together"),
+  Category(name: "next-best-date", textOnImage: "next best date"),
+]
 
 struct DiscoverAndMatchView: View {
   var body: some View {
@@ -41,15 +59,9 @@ struct DiscoverAndMatchView: View {
         Color.init("MainBackgroundColor").ignoresSafeArea()
         ScrollView {
           VStack(spacing: 0) {
-            TileTextImageLink(category: "a-perfect-match", text: "a \"perfect\" match")
-            TileTextImageLink(category: "dinner-at-home", text: "dinner at home")
-            TileTextImageLink(category: "a-perfect-gift", text: "a \"perfect\" gift")
-            TileTextImageLink(category: "movie-night", text: "movie night")
-            TileTextImageLink(category: "evening-out", text: "evening out")
-            TileTextImageLink(category: "next-vacations", text: "next vacations")
-            TileTextImageLink(category: "weekend-retreat", text: "weekend retreat")
-            TileTextImageLink(category: "active-together", text: "active together")
-            TileTextImageLink(category: "next-best-date", text: "next best date")
+            ForEach(categories) { category in
+              CategoryTile(category: category)
+            }
           }
         }
       }
@@ -59,6 +71,8 @@ struct DiscoverAndMatchView: View {
 
 struct MatchView_Previews: PreviewProvider {
   static var previews: some View {
-    DiscoverAndMatchView()
+    Group {
+      DiscoverAndMatchView()
+    }
   }
 }
