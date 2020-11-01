@@ -55,14 +55,3 @@ struct ContentView_Previews: PreviewProvider {
     ContentView()
   }
 }
-
-//ZStack {
-//  ZStack {
-//    RoundedRectangle(cornerRadius: 10).foregroundColor(.blue)
-//      .edgesIgnoringSafeArea( /*@START_MENU_TOKEN@*/.all /*@END_MENU_TOKEN@*/)
-//    VStack {
-//      Text("Twoja stara pierze w rzece")
-//      Image("Profile Photo4x")
-//    }
-//  }
-//}
