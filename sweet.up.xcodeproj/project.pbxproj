@@ -3,11 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3C19ABF5253B201200EAA223 /* DiscoverAndMatchCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C19ABF4253B201200EAA223 /* DiscoverAndMatchCategoryView.swift */; };
+		3C5CFFC02545AC23002E9526 /* CardStack in Frameworks */ = {isa = PBXBuildFile; productRef = 3C5CFFBF2545AC23002E9526 /* CardStack */; };
+		3CC065662545B83200A66B0A /* categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC065652545B83200A66B0A /* categories.swift */; };
 		3CF7DE0E253AE0BE00075683 /* DiscoverAndMatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF7DE0D253AE0BE00075683 /* DiscoverAndMatchView.swift */; };
 		7B3F8FD52540C46D009C34BC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3F8FD42540C46D009C34BC /* HomeView.swift */; };
 		7B3F8FDA2540C9C9009C34BC /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3F8FD92540C9C9009C34BC /* CalendarView.swift */; };
@@ -51,6 +53,7 @@
 
 /* Begin PBXFileReference section */
 		3C19ABF4253B201200EAA223 /* DiscoverAndMatchCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverAndMatchCategoryView.swift; sourceTree = "<group>"; };
+		3CC065652545B83200A66B0A /* categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = categories.swift; sourceTree = "<group>"; };
 		3CF7DE0D253AE0BE00075683 /* DiscoverAndMatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverAndMatchView.swift; sourceTree = "<group>"; };
 		7B3F8FD42540C46D009C34BC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		7B3F8FD92540C9C9009C34BC /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
@@ -87,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C5CFFC02545AC23002E9526 /* CardStack in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +111,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3CC065642545B81300A66B0A /* DiscoverAndMatch */ = {
+			isa = PBXGroup;
+			children = (
+				3C19ABF4253B201200EAA223 /* DiscoverAndMatchCategoryView.swift */,
+				3CF7DE0D253AE0BE00075683 /* DiscoverAndMatchView.swift */,
+				3CC065652545B83200A66B0A /* categories.swift */,
+			);
+			path = DiscoverAndMatch;
+			sourceTree = "<group>";
+		};
 		7BC517D0253E157C00EC120E = {
 			isa = PBXGroup;
 			children = (
@@ -135,12 +149,11 @@
 		7BC517DB253E157C00EC120E /* sweet.up */ = {
 			isa = PBXGroup;
 			children = (
+				3CC065642545B81300A66B0A /* DiscoverAndMatch */,
 				7BC986A025362F9C006E6AB4 /* LearningView.swift */,
 				7B63EC7B253A13B600D0330F /* LearningRest.swift */,
 				7B63EC80253A13DE00D0330F /* DataService.swift */,
 				7BBCFF83253A1EC70071EB96 /* Gist.swift */,
-				3CF7DE0D253AE0BE00075683 /* DiscoverAndMatchView.swift */,
-				3C19ABF4253B201200EAA223 /* DiscoverAndMatchCategoryView.swift */,
 				7BC517DC253E157C00EC120E /* AppDelegate.swift */,
 				7BC517DE253E157C00EC120E /* SceneDelegate.swift */,
 				7BC517E0253E157C00EC120E /* ContentView.swift */,
@@ -199,6 +212,9 @@
 			dependencies = (
 			);
 			name = sweet.up;
+			packageProductDependencies = (
+				3C5CFFBF2545AC23002E9526 /* CardStack */,
+			);
 			productName = sweet.up;
 			productReference = 7BC517D9253E157C00EC120E /* sweet.up.app */;
 			productType = "com.apple.product-type.application";
@@ -270,6 +286,9 @@
 				Base,
 			);
 			mainGroup = 7BC517D0253E157C00EC120E;
+			packageReferences = (
+				3C5CFFBE2545AC23002E9526 /* XCRemoteSwiftPackageReference "SwiftUI-CardStackView" */,
+			);
 			productRefGroup = 7BC517DA253E157C00EC120E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -329,6 +348,7 @@
 				7BC517DF253E157C00EC120E /* SceneDelegate.swift in Sources */,
 				7B3F8FD52540C46D009C34BC /* HomeView.swift in Sources */,
 				7B3F8FDF2540C9E0009C34BC /* PhotoAlbumView.swift in Sources */,
+				3CC065662545B83200A66B0A /* categories.swift in Sources */,
 				7BC517E1253E157C00EC120E /* ContentView.swift in Sources */,
 				7BC51815253E15C500EC120E /* AboutView.swift in Sources */,
 			);
@@ -659,6 +679,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3C5CFFBE2545AC23002E9526 /* XCRemoteSwiftPackageReference "SwiftUI-CardStackView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dadalar/SwiftUI-CardStackView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3C5CFFBF2545AC23002E9526 /* CardStack */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3C5CFFBE2545AC23002E9526 /* XCRemoteSwiftPackageReference "SwiftUI-CardStackView" */;
+			productName = CardStack;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7BC517D1253E157C00EC120E /* Project object */;
 }
