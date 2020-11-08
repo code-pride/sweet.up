@@ -7,25 +7,29 @@
 
 import Foundation
 
-struct Category: Identifiable {
+struct DiscoverAndMatchCategory: Identifiable {
   var id = UUID()
 
   var name: String
-  var textOnImage: String
+  var title: String
   var description: String? = nil
 }
 
-let categories: [String: Category] = [
-  "a-perfect-match": Category(name: "a-perfect-match", textOnImage: "a \"perfect\" match"),
-  "dinner-at-home": Category(
-    name: "dinner-at-home", textOnImage: "dinner at home",
+let discoverAndMatchCategories: [String: DiscoverAndMatchCategory] = [
+  "a-perfect-match": DiscoverAndMatchCategory(
+    name: "a-perfect-match", title: "a \"perfect\" match"),
+  "dinner-at-home": DiscoverAndMatchCategory(
+    name: "dinner-at-home", title: "dinner at home",
     description:
       "Browse through ideas of dishes to cook at home, get a match and unlock new recipes!"),
-  "a-perfect-gift": Category(name: "a-perfect-gift", textOnImage: "a \"perfect\" gift"),
-  "movie-night": Category(name: "movie-night", textOnImage: "movie night"),
-  "evening-out": Category(name: "evening-out", textOnImage: "evening out"),
-  "next-vacations": Category(name: "next-vacations", textOnImage: "next vacations"),
-  "weekend-retreat": Category(name: "weekend-retreat", textOnImage: "weekend retreat"),
-  "active-together": Category(name: "active-together", textOnImage: "active together"),
-  "next-best-date": Category(name: "next-best-date", textOnImage: "next best date"),
+  "a-perfect-gift": DiscoverAndMatchCategory(
+    name: "a-perfect-gift", title: "a \"perfect\" gift"),
+  "movie-night": DiscoverAndMatchCategory(name: "movie-night", title: "movie night"),
+  "evening-out": DiscoverAndMatchCategory(name: "evening-out", title: "evening out"),
+  "next-vacations": DiscoverAndMatchCategory(name: "next-vacations", title: "next vacations"),
+  "weekend-retreat": DiscoverAndMatchCategory(
+    name: "weekend-retreat", title: "weekend retreat"),
+  "active-together": DiscoverAndMatchCategory(
+    name: "active-together", title: "active together"),
+  "next-best-date": DiscoverAndMatchCategory(name: "next-best-date", title: "next best date"),
 ]
