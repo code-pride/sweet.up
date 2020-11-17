@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CategoryTile: View {
-  let category: Category
+  let category: DiscoverAndMatchCategory
   @State private var isPresented = false
 
   let imageHeight: CGFloat = 146
@@ -22,7 +22,7 @@ struct CategoryTile: View {
       Image(category.name).resizable()
         .frame(height: imageHeight)
       HStack(spacing: 0) {
-        Text(category.textOnImage)
+        Text(category.title)
           .font(Font.body.bold())
           .frame(maxWidth: .infinity, alignment: .leading)
           .foregroundColor(.white)
@@ -39,7 +39,7 @@ struct CategoryTile: View {
 }
 
 struct DiscoverAndMatchView: View {
-  let categoriesElements = [Category](categories.values)
+  let categoriesElements = [DiscoverAndMatchCategory](discoverAndMatchCategories.values)
 
   var body: some View {
     ZStack {
